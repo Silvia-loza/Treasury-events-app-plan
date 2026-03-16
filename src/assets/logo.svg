@@ -1,0 +1,10 @@
+<svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+  <!-- Billete con líneas para representar cuentas -->
+  <rect x="5" y="10" width="40" height="30" rx="3" fill="#10b981" stroke="#059669" stroke-width="1"/>
+  <line x1="10" y1="18" x2="35" y2="18" stroke="white" stroke-width="1"/>
+  <line x1="10" y1="23" x2="35" y2="23" stroke="white" stroke-width="1"/>
+  <line x1="10" y1="28" x2="35" y2="28" stroke="white" stroke-width="1"/>
+  <line x1="10" y1="33" x2="35" y2="33" stroke="white" stroke-width="1"/>
+  <!-- Símbolo de euro -->
+  <text x="42" y="25" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#10b981">€</text>
+</svg>

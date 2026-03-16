@@ -2,7 +2,7 @@ import { CommonModule } from "@angular/common";
 import { Component, computed, inject, signal } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { RouterLink } from "@angular/router";
-import { AppStoreService } from "../services/app-store.service";
+import { AppStoreService } from "../../services/app-store.service";
 
 @Component({
   selector: "app-events-list",

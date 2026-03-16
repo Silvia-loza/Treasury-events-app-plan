@@ -2,8 +2,8 @@ import { CurrencyPipe, NgClass } from "@angular/common";
 import { Component, computed, inject, signal } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { ActivatedRoute, RouterLink } from "@angular/router";
-import { CostCategory } from "../models";
-import { AppStoreService } from "../services/app-store.service";
+import { CostCategory } from "../../models";
+import { AppStoreService } from "../../services/app-store.service";
 
 @Component({
   selector: "app-event-detail",

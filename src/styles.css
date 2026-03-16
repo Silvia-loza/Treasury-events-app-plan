@@ -4,8 +4,8 @@
   --card: #ffffff;
   --text: #111827;
   --muted: #6b7280;
-  --primary: #4f46e5;
-  --primary-dark: #4338ca;
+  --primary: #10b981; /* Changed to green */
+  --primary-dark: #059669; /* Darker green */
   --border: #e5e7eb;
   --success: #047857;
   --warning: #d97706;
@@ -39,7 +39,7 @@ body {
   padding: 1rem;
 }
 
-.topbar {
+.page-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
