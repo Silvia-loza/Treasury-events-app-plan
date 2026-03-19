@@ -1,16 +1,16 @@
 <section class="page-header">
   <div style="display: flex; align-items: center; gap: 1rem">
     <img src="assets/logo.svg" alt="Gang Funds Logo" style="height: 40px" />
-    <h2>Gang Funds</h2>
+    <h2 i18n>Gang Funds</h2>
   </div>
-  <button class="primary-button" (click)="toggleForm()" *ngIf="!showForm()">
+  <button class="primary-button" (click)="toggleForm()" *ngIf="!showForm()" i18n>
     Add Event
   </button>
 </section>
 
 <section class="card stack-lg" *ngIf="showForm()">
   <form class="grid-form" (ngSubmit)="createEvent()">
-    <label>
+    <label i18n>
       Event name
       <input
         [(ngModel)]="draft.name"
@@ -20,12 +20,12 @@
       />
     </label>
 
-    <label>
+    <label i18n>
       Date
       <input [(ngModel)]="draft.date" name="date" type="date" required />
     </label>
 
-    <label>
+    <label i18n>
       Treasurer
       <input
         [(ngModel)]="draft.treasurer"
@@ -35,7 +35,7 @@
       />
     </label>
 
-    <label class="span-2">
+    <label class="span-2" i18n>
       Description
       <textarea
         [(ngModel)]="draft.description"
@@ -46,8 +46,8 @@
     </label>
 
     <div class="span-2 actions-row">
-      <button class="primary-button" type="submit">Create event</button>
-      <button class="ghost-button" type="button" (click)="toggleForm()">
+      <button class="primary-button" type="submit" i18n>Create event</button>
+      <button class="ghost-button" type="button" (click)="toggleForm()" i18n>
         Cancel
       </button>
     </div>
@@ -57,7 +57,7 @@
 <section class="stack-lg">
   <div class="section-header">
     <div>
-      <h3>Your events</h3>
+      <h3 i18n="@@yourEventsTitle">Your events</h3>
       <p class="muted">Tap an event to open the mobile dashboard.</p>
     </div>
   </div>
@@ -87,7 +87,7 @@
                 d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
               ></path>
             </svg>
-            Open
+            <span i18n>Open</span>
           </a>
         </div>
 

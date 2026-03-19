@@ -21,11 +21,13 @@ export class EventDetailComponent {
     "summary" | "participants" | "costs" | "treasury"
   >("summary");
   readonly tabs = [
-    { id: "summary", label: "Summary" },
-    { id: "participants", label: "Participants" },
-    { id: "costs", label: "Costs" },
-    { id: "treasury", label: "Treasury" },
+    { id: "summary", label: $localize`Summary` },
+    { id: "participants", label: $localize`Participants` },
+    { id: "costs", label: $localize`Costs` },
+    { id: "treasury", label: $localize`Treasury` },
   ] as const;
+
+  readonly noNotesText = $localize`No notes`;
 
   readonly meta = {
     name: "",

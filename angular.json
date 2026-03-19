@@ -3,17 +3,25 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "party-treasury-app": {
+    "gang-funds": {
       "projectType": "application",
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "es": {
+            "translation": "messages.es.xlf"
+          }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "browser": "src/main.ts",
-            "polyfills": ["zone.js"],
+            "polyfills": ["zone.js",  "@angular/localize/init"],
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
@@ -48,6 +56,9 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "es": {
+              "localize": ["es"]
             }
           },
           "defaultConfiguration": "production"
@@ -56,10 +67,13 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "party-treasury-app:build:production"
+              "buildTarget": "gang-funds:build:production"
             },
             "development": {
-              "buildTarget": "party-treasury-app:build:development"
+              "buildTarget": "gang-funds:build:development"
+            },
+            "es": {
+              "buildTarget": "gang-funds:build:es"
             }
           },
           "defaultConfiguration": "development"

@@ -1,11 +1,11 @@
 import { Component, inject } from "@angular/core";
-import { RouterLink, RouterLinkActive, RouterOutlet } from "@angular/router";
+import { RouterOutlet } from "@angular/router";
 import { AppStoreService } from "./services/app-store.service";
 
 @Component({
   selector: "app-root",
   standalone: true,
-  imports: [RouterOutlet, RouterLink, RouterLinkActive],
+  imports: [RouterOutlet],
   template: `
     <div class="shell">
       <header class="topbar">
