@@ -32,7 +32,7 @@
       </trans-unit>
       <trans-unit id="233379993357985123" datatype="html">
         <source>Total event cost</source>
-        <target>Costo total del evento</target>
+        <target>Coste total del evento</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
           <context context-type="linenumber">13,14</context>
@@ -40,7 +40,7 @@
       </trans-unit>
       <trans-unit id="2110303417465552387" datatype="html">
         <source>Cost / person</source>
-        <target>Costo / persona</target>
+        <target>Coste / persona</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
           <context context-type="linenumber">17,18</context>
@@ -615,7 +615,7 @@
       </trans-unit>
       <trans-unit id="6612580946545131013" datatype="html">
         <source>Create event</source>
-        <target></target>
+        <target>Crear Evento</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
           <context context-type="linenumber">49,50</context>
@@ -643,6 +643,87 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
           <context context-type="linenumber">60,63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8122717889435927638" datatype="html">
+      <source>👥 Participants</source>
+      <target>👥 Participantes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">101,102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2734420018350662857" datatype="html">
+        <source>💰 Cost / person</source>
+        <target>💰 Coste / persona</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">105,107</context>
+        </context-group>
+      </trans-unit>
+       <trans-unit id="5791125806552988373" datatype="html">
+        <source>💸 Collected</source>
+        <target>💸 Cobrado</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">111,113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6930749174350693923" datatype="html">
+        <source>⏳ Remaining</source>
+        <target>⏳ Pendiente</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">117,119</context>
+        </context-group>
+      </trans-unit>
+       <trans-unit id="1541998879959661422" datatype="html">
+        <source>📅 No events yet</source>
+        <target>📅 No hay eventos aún</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">127,128</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2480242302014621403" datatype="html">
+        <source>Create the first one using the button above.</source>
+        <target>Crea el primero usando el botón de arriba.</target>
+
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">128,133</context>
+        </context-group>
+      </trans-unit>
+       <trans-unit id="1505445663464000762" datatype="html">
+        <source> Event name </source>
+        <target> Nombre del evento </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">18,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1216445956577529579" datatype="html">
+        <source> Date </source>
+        <target> Fecha </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8277265519845190276" datatype="html">
+        <source> Treasurer </source>
+        <target> Tesorero </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">29,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3563823504206575540" datatype="html">
+        <source> Description </source>
+        <target> Descripción </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">37,40</context>
         </context-group>
       </trans-unit>
     </body>

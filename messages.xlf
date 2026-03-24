@@ -491,85 +491,112 @@
         <source>Gang Funds</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
-          <context context-type="linenumber">4,6</context>
+          <context context-type="linenumber">4,8</context>
         </context-group>
       </trans-unit>
       <trans-unit id="468690645153242058" datatype="html">
         <source> Add Event </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
-          <context context-type="linenumber">7,11</context>
+          <context context-type="linenumber">12,16</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4431912934400469150" datatype="html">
-        <source> Event name <x id="TAG_INPUT" ctype="x-input" equiv-text="&lt;input
-        [(ngModel)]=&quot;draft.name&quot;
-        name=&quot;name&quot;
-        placeholder=&quot;Birthday dinner&quot;
-        required
-      /&gt;"/></source>
+      <trans-unit id="1505445663464000762" datatype="html">
+        <source> Event name </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
-          <context context-type="linenumber">14,21</context>
+          <context context-type="linenumber">18,22</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="984734398347471762" datatype="html">
-        <source> Date <x id="TAG_INPUT" ctype="x-input" equiv-text="&lt;input [(ngModel)]=&quot;draft.date&quot; name=&quot;date&quot; type=&quot;date&quot; required /&gt;"/></source>
+      <trans-unit id="1216445956577529579" datatype="html">
+        <source> Date </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
-          <context context-type="linenumber">24,26</context>
+          <context context-type="linenumber">26,27</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="1752523617907345270" datatype="html">
-        <source> Treasurer <x id="TAG_INPUT" ctype="x-input" equiv-text="&lt;input
-        [(ngModel)]=&quot;draft.treasurer&quot;
-        name=&quot;treasurer&quot;
-        placeholder=&quot;Silvia&quot;
-        required
-      /&gt;"/></source>
+      <trans-unit id="8277265519845190276" datatype="html">
+        <source> Treasurer </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
-          <context context-type="linenumber">29,36</context>
+          <context context-type="linenumber">29,32</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="6770837676953472023" datatype="html">
-        <source> Description <x id="START_TAG_TEXTAREA" ctype="x-textarea" equiv-text="&lt;textarea
-        [(ngModel)]=&quot;draft.description&quot;
-        name=&quot;description&quot;
-        rows=&quot;3&quot;
-        placeholder=&quot;Optional notes&quot;
-      &gt;"/><x id="CLOSE_TAG_TEXTAREA" ctype="x-textarea" equiv-text="&lt;/textarea&gt;"/></source>
+      <trans-unit id="3563823504206575540" datatype="html">
+        <source> Description </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
-          <context context-type="linenumber">39,48</context>
+          <context context-type="linenumber">37,40</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6612580946545131013" datatype="html">
         <source>Create event</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
-          <context context-type="linenumber">49,50</context>
+          <context context-type="linenumber">46,47</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2330577642930707695" datatype="html">
         <source> Cancel </source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
-          <context context-type="linenumber">51,57</context>
+          <context context-type="linenumber">48,54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="yourEventsTitle" datatype="html">
         <source>Your events</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
-          <context context-type="linenumber">60,63</context>
+          <context context-type="linenumber">57,62</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7593555694782789615" datatype="html">
         <source>Open</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
-          <context context-type="linenumber">90,94</context>
+          <context context-type="linenumber">87,91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8122717889435927638" datatype="html">
+        <source>👥 Participants</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">93,94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2734420018350662857" datatype="html">
+        <source>💰 Cost / person</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">97,99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5791125806552988373" datatype="html">
+        <source>💸 Collected</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">103,105</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6930749174350693923" datatype="html">
+        <source>⏳ Remaining</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">109,111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1541998879959661422" datatype="html">
+        <source>📅 No events yet</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">119,120</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2480242302014621403" datatype="html">
+        <source>Create the first one using the button above.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">120,125</context>
         </context-group>
       </trans-unit>
     </body>
