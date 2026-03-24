@@ -3,62 +3,57 @@
     <img src="assets/logo.svg" alt="Gang Funds Logo" style="height: 40px" />
     <h2 i18n>Gang Funds</h2>
   </div>
-  <button class="primary-button" (click)="toggleForm()" *ngIf="!showForm()" i18n>
-    Add Event
-  </button>
+  @if (!showForm()) {
+    <button class="primary-button" (click)="toggleForm()" i18n>
+      Add Event
+    </button>
+  }
 </section>
 
-<section class="card stack-lg" *ngIf="showForm()">
-  <form class="grid-form" (ngSubmit)="createEvent()">
-    <label i18n>
-      Event name
+@if (showForm()) {
+  <section class="card stack-lg">
+    <form class="grid-form" (ngSubmit)="createEvent()">
+      <label i18n> Event name </label>
       <input
         [(ngModel)]="draft.name"
         name="name"
         placeholder="Birthday dinner"
         required
       />
-    </label>
 
-    <label i18n>
-      Date
+      <label i18n> Date </label>
       <input [(ngModel)]="draft.date" name="date" type="date" required />
-    </label>
 
-    <label i18n>
-      Treasurer
+      <label i18n> Treasurer </label>
       <input
         [(ngModel)]="draft.treasurer"
         name="treasurer"
-        placeholder="Silvia"
+        placeholder="Treasurer name"
         required
       />
-    </label>
 
-    <label class="span-2" i18n>
-      Description
+      <label class="span-2" i18n> Description </label>
       <textarea
         [(ngModel)]="draft.description"
         name="description"
         rows="3"
         placeholder="Optional notes"
       ></textarea>
-    </label>
 
-    <div class="span-2 actions-row">
-      <button class="primary-button" type="submit" i18n>Create event</button>
-      <button class="ghost-button" type="button" (click)="toggleForm()" i18n>
-        Cancel
-      </button>
-    </div>
-  </form>
-</section>
-
+      <div class="span-2 actions-row">
+        <button class="primary-button" type="submit" i18n>Create event</button>
+        <button class="ghost-button" type="button" (click)="toggleForm()" i18n>
+          Cancel
+        </button>
+      </div>
+    </form>
+  </section>
+}
 <section class="stack-lg">
   <div class="section-header">
     <div>
       <h3 i18n="@@yourEventsTitle">Your events</h3>
-      <p class="muted">Tap an event to open the mobile dashboard.</p>
+      <p class="muted">@User will go here</p>
     </div>
   </div>
 
@@ -93,23 +88,23 @@
 
         <div class="summary-grid compact-grid">
           <div class="summary-chip">
-            <span>👥 Participants</span>
+            <span i18n>👥 Participants</span>
             <strong>{{ store.activeParticipantsCount(event) }}</strong>
           </div>
           <div class="summary-chip">
-            <span>💰 Cost / person</span>
+            <span i18n>💰 Cost / person</span>
             <strong>{{
               store.costPerPerson(event) | currency: "EUR" : "symbol" : "1.2-2"
             }}</strong>
           </div>
           <div class="summary-chip">
-            <span>💸 Collected</span>
+            <span i18n>💸 Collected</span>
             <strong>{{
               store.totalCollected(event) | currency: "EUR" : "symbol" : "1.2-2"
             }}</strong>
           </div>
           <div class="summary-chip">
-            <span>⏳ Remaining</span>
+            <span i18n>⏳ Remaining</span>
             <strong>{{
               store.remainingVendorPayments(event)
                 | currency: "EUR" : "symbol" : "1.2-2"
@@ -119,8 +114,8 @@
       </article>
     } @empty {
       <article class="card empty-state">
-        <h3>📅 No events yet</h3>
-        <p class="muted">Create the first one using the button above.</p>
+        <h3 i18n>📅 No events yet</h3>
+        <p class="muted" i18n>Create the first one using the button above.</p>
       </article>
     }
   </div>
