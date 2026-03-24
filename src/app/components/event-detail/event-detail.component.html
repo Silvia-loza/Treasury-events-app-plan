@@ -1,36 +1,36 @@
 @if (event(); as currentEvent) {
   <section class="page-header">
     <div>
-      <a routerLink="/events" class="back-link">← Back to events</a>
-      <p class="eyebrow">Event dashboard</p>
+      <a routerLink="/events" class="back-link" i18n>← Back to events</a>
+      <p class="eyebrow" i18n>Event dashboard</p>
       <h2>{{ currentEvent.name }}</h2>
-      <p class="muted">{{ currentEvent.date }} · Treasurer: {{ currentEvent.treasurer }}</p>
+      <p class="muted">{{ currentEvent.date }} · <span i18n>Treasurer</span>: {{ currentEvent.treasurer }}</p>
     </div>
   </section>
 
   <section class="summary-grid stack-lg">
     <article class="summary-card">
-      <span>Total event cost</span>
+      <span i18n>Total event cost</span>
       <strong>{{ store.totalEventCost(currentEvent) | currency:'EUR':'symbol':'1.2-2' }}</strong>
     </article>
     <article class="summary-card">
-      <span>Cost / person</span>
+      <span i18n>Cost / person</span>
       <strong>{{ store.costPerPerson(currentEvent) | currency:'EUR':'symbol':'1.2-2' }}</strong>
     </article>
     <article class="summary-card">
-      <span>Collected</span>
+      <span i18n>Collected</span>
       <strong>{{ store.totalCollected(currentEvent) | currency:'EUR':'symbol':'1.2-2' }}</strong>
     </article>
     <article class="summary-card">
-      <span>Paid to vendors</span>
+      <span i18n>Paid to vendors</span>
       <strong>{{ store.totalOutgoing(currentEvent) | currency:'EUR':'symbol':'1.2-2' }}</strong>
     </article>
     <article class="summary-card">
-      <span>Cash balance</span>
+      <span i18n>Cash balance</span>
       <strong>{{ store.balance(currentEvent) | currency:'EUR':'symbol':'1.2-2' }}</strong>
     </article>
     <article class="summary-card">
-      <span>Remaining to pay</span>
+      <span i18n>Remaining to pay</span>
       <strong>{{ store.remainingVendorPayments(currentEvent) | currency:'EUR':'symbol':'1.2-2' }}</strong>
     </article>
   </section>
@@ -48,29 +48,29 @@
       <section class="card stack-md">
         <div class="section-header">
           <div>
-            <h3>Event basics</h3>
-            <p class="muted">Quick edit for the main event fields.</p>
+            <h3 i18n>Event basics</h3>
+            <p class="muted" i18n>Quick edit for the main event fields.</p>
           </div>
         </div>
         <form class="grid-form" (ngSubmit)="saveMeta()">
           <label>
-            Event name
+            <span i18n>Event name</span>
             <input [(ngModel)]="meta.name" name="eventName" required />
           </label>
           <label>
-            Date
+            <span i18n>Date</span>
             <input [(ngModel)]="meta.date" name="eventDate" type="date" required />
           </label>
           <label>
-            Treasurer
+            <span i18n>Treasurer</span>
             <input [(ngModel)]="meta.treasurer" name="treasurer" required />
           </label>
           <label class="span-2">
-            Description
+            <span i18n>Description</span>
             <textarea [(ngModel)]="meta.description" name="description" rows="3"></textarea>
           </label>
           <div class="span-2 actions-row">
-            <button class="primary-button" type="submit">Save details</button>
+            <button class="primary-button" type="submit" i18n>Save details</button>
           </div>
         </form>
       </section>
@@ -81,22 +81,22 @@
         <article class="card">
           <div class="section-header">
             <div>
-              <h3>Add participant</h3>
-              <p class="muted">Payments stay in this event only.</p>
+              <h3 i18n>Add participant</h3>
+              <p class="muted" i18n>Payments stay in this event only.</p>
             </div>
           </div>
           <form class="inline-form" (ngSubmit)="addParticipant()">
-            <input [(ngModel)]="participantDraft.name" name="participantName" placeholder="Name" required />
-            <input [(ngModel)]="participantDraft.notes" name="participantNotes" placeholder="Notes (optional)" />
-            <button class="primary-button" type="submit">Add</button>
+            <input [(ngModel)]="participantDraft.name" name="participantName" placeholder="Name" i18n-placeholder required />
+            <input [(ngModel)]="participantDraft.notes" name="participantNotes" placeholder="Notes (optional)" i18n-placeholder />
+            <button class="primary-button" type="submit" i18n>Add</button>
           </form>
         </article>
 
         <article class="card stack-md">
           <div class="section-header">
             <div>
-              <h3>Participants</h3>
-              <p class="muted">Mobile-first list with payment status.</p>
+              <h3 i18n>Participants</h3>
+              <p class="muted" i18n>Mobile-first list with payment status.</p>
             </div>
           </div>
 
@@ -104,7 +104,7 @@
             <div class="list-row">
               <div>
                 <div class="list-row__title">{{ participant.name }}</div>
-                <div class="muted small">{{ participant.notes || 'No notes' }}</div>
+                <div class="muted small">{{ participant.notes || noNotesText }}</div>
               </div>
               <div class="status-box" [ngClass]="store.participantStatus(currentEvent, participant.id)">
                 {{ store.participantStatus(currentEvent, participant.id) }}
@@ -113,23 +113,23 @@
 
             <div class="participant-metrics">
               <div>
-                <span>Paid</span>
+                <span i18n>Paid</span>
                 <strong>{{ store.participantPaid(currentEvent, participant.id) | currency:'EUR':'symbol':'1.2-2' }}</strong>
               </div>
               <div>
-                <span>Pending</span>
+                <span i18n>Pending</span>
                 <strong>{{ store.participantPending(currentEvent, participant.id) | currency:'EUR':'symbol':'1.2-2' }}</strong>
               </div>
             </div>
 
             <form class="inline-form compact-form" (ngSubmit)="addPayment(participant.id)">
-              <input [(ngModel)]="paymentDrafts[participant.id].amount" name="amount-{{ participant.id }}" type="number" min="0" step="0.01" placeholder="Amount" required />
-              <input [(ngModel)]="paymentDrafts[participant.id].note" name="note-{{ participant.id }}" placeholder="Initial / extra / note" />
-              <button class="ghost-button" type="submit">Add payment</button>
-              <button class="danger-button" type="button" (click)="removeParticipant(participant.id)">Remove</button>
+              <input [(ngModel)]="paymentDrafts[participant.id].amount" name="amount-{{ participant.id }}" type="number" min="0" step="0.01" placeholder="Amount" i18n-placeholder required />
+              <input [(ngModel)]="paymentDrafts[participant.id].note" name="note-{{ participant.id }}" placeholder="Initial / extra / note" i18n-placeholder />
+              <button class="ghost-button" type="submit" i18n>Add payment</button>
+              <button class="danger-button" type="button" (click)="removeParticipant(participant.id)" i18n>Remove</button>
             </form>
           } @empty {
-            <p class="muted">No participants yet.</p>
+            <p class="muted" i18n>No participants yet.</p>
           }
         </article>
       </section>
@@ -146,29 +146,29 @@
           </div>
           <form class="grid-form" (ngSubmit)="saveCost()">
             <label>
-              Label
-              <input [(ngModel)]="costDraft.label" name="costLabel" placeholder="Menu / DJ / Decoration" required />
+              <span i18n>Label</span>
+              <input [(ngModel)]="costDraft.label" name="costLabel" placeholder="Menu / DJ / Decoration" i18n-placeholder required />
             </label>
             <label>
-              Category
+              <span i18n>Category</span>
               <select [(ngModel)]="costDraft.category" name="costCategory">
-                <option value="menu">Menu</option>
-                <option value="music">Music</option>
-                <option value="decoration">Decoration</option>
-                <option value="other">Other</option>
+                <option value="menu" i18n>Menu</option>
+                <option value="music" i18n>Music</option>
+                <option value="decoration" i18n>Decoration</option>
+                <option value="other" i18n>Other</option>
               </select>
             </label>
             <label>
-              Total cost
+              <span i18n>Total cost</span>
               <input [(ngModel)]="costDraft.totalCost" name="costTotal" type="number" min="0" step="0.01" required />
             </label>
             <label class="span-2">
-              Notes
-              <input [(ngModel)]="costDraft.notes" name="costNotes" placeholder="Optional" />
+              <span i18n>Notes</span>
+              <input [(ngModel)]="costDraft.notes" name="costNotes" placeholder="Optional" i18n-placeholder />
             </label>
             <div class="span-2 actions-row">
-              <button class="primary-button" type="submit">Save cost</button>
-              <button class="ghost-button" type="button" (click)="resetCostDraft()">Clear</button>
+              <button class="primary-button" type="submit" i18n>Save cost</button>
+              <button class="ghost-button" type="button" (click)="resetCostDraft()" i18n>Clear</button>
             </div>
           </form>
         </article>
@@ -176,8 +176,8 @@
         <article class="card stack-md">
           <div class="section-header">
             <div>
-              <h3>Costs</h3>
-              <p class="muted">Tap edit to load an item back into the form.</p>
+              <h3 i18n>Costs</h3>
+              <p class="muted" i18n>Tap edit to load an item back into the form.</p>
             </div>
           </div>
 
@@ -185,25 +185,25 @@
             <div class="list-row">
               <div>
                 <div class="list-row__title">{{ cost.label }}</div>
-                <div class="muted small">{{ cost.category }} · {{ cost.notes || 'No notes' }}</div>
+                <div class="muted small">{{ cost.category }} · {{ cost.notes || noNotesText }}</div>
               </div>
               <strong>{{ cost.totalCost | currency:'EUR':'symbol':'1.2-2' }}</strong>
             </div>
             <div class="participant-metrics">
               <div>
-                <span>Cost / person</span>
+                <span i18n>Cost / person</span>
                 <strong>{{ currentEvent.participants.length ? (cost.totalCost / currentEvent.participants.length) : 0 | currency:'EUR':'symbol':'1.2-2' }}</strong>
               </div>
               <div>
-                <span>Actions</span>
+                <span i18n>Actions</span>
                 <strong class="action-links">
-                  <button type="button" class="link-button" (click)="editCost(cost.id)">Edit</button>
-                  <button type="button" class="link-button danger-link" (click)="removeCost(cost.id)">Delete</button>
+                  <button type="button" class="link-button" (click)="editCost(cost.id)" i18n>Edit</button>
+                  <button type="button" class="link-button danger-link" (click)="removeCost(cost.id)" i18n>Delete</button>
                 </strong>
               </div>
             </div>
           } @empty {
-            <p class="muted">No costs yet.</p>
+            <p class="muted" i18n>No costs yet.</p>
           }
         </article>
       </section>
@@ -214,66 +214,66 @@
         <article class="card">
           <div class="section-header">
             <div>
-              <h3>Add treasury movement</h3>
-              <p class="muted">Use this for vendor payments or extra money added to the event cashbox.</p>
+              <h3 i18n>Add treasury movement</h3>
+              <p class="muted" i18n>Use this for vendor payments or extra money added to the event cashbox.</p>
             </div>
           </div>
           <form class="grid-form" (ngSubmit)="addTreasuryEntry()">
             <label>
-              Label
-              <input [(ngModel)]="treasuryDraft.label" name="treasuryLabel" placeholder="Deposit restaurant / DJ payment" required />
+              <span i18n>Label</span>
+              <input [(ngModel)]="treasuryDraft.label" name="treasuryLabel" placeholder="Deposit restaurant / DJ payment" i18n-placeholder required />
             </label>
             <label>
-              Direction
+              <span i18n>Direction</span>
               <select [(ngModel)]="treasuryDraft.direction" name="treasuryDirection">
-                <option value="out">Outgoing</option>
-                <option value="in">Incoming extra</option>
+                <option value="out" i18n>Outgoing</option>
+                <option value="in" i18n>Incoming extra</option>
               </select>
             </label>
             <label>
-              Amount
+              <span i18n>Amount</span>
               <input [(ngModel)]="treasuryDraft.amount" name="treasuryAmount" type="number" min="0" step="0.01" required />
             </label>
             <label class="span-2">
-              Notes
-              <input [(ngModel)]="treasuryDraft.note" name="treasuryNote" placeholder="Optional" />
+              <span i18n>Notes</span>
+              <input [(ngModel)]="treasuryDraft.note" name="treasuryNote" placeholder="Optional" i18n-placeholder />
             </label>
             <div class="span-2 actions-row">
-              <button class="primary-button" type="submit">Save movement</button>
+              <button class="primary-button" type="submit" i18n>Save movement</button>
             </div>
           </form>
         </article>
 
         <article class="summary-grid compact-grid">
-          <div class="summary-chip"><span>Collected</span><strong>{{ store.totalCollected(currentEvent) | currency:'EUR':'symbol':'1.2-2' }}</strong></div>
-          <div class="summary-chip"><span>Extra incoming</span><strong>{{ store.totalIncomingExtra(currentEvent) | currency:'EUR':'symbol':'1.2-2' }}</strong></div>
-          <div class="summary-chip"><span>Outgoing</span><strong>{{ store.totalOutgoing(currentEvent) | currency:'EUR':'symbol':'1.2-2' }}</strong></div>
-          <div class="summary-chip"><span>Balance</span><strong>{{ store.balance(currentEvent) | currency:'EUR':'symbol':'1.2-2' }}</strong></div>
-          <div class="summary-chip"><span>Remaining vendor payments</span><strong>{{ store.remainingVendorPayments(currentEvent) | currency:'EUR':'symbol':'1.2-2' }}</strong></div>
-          <div class="summary-chip"><span>Treasurer advance</span><strong>{{ store.treasuryPersonalAdvance(currentEvent) | currency:'EUR':'symbol':'1.2-2' }}</strong></div>
+          <div class="summary-chip"><span i18n>Collected</span><strong>{{ store.totalCollected(currentEvent) | currency:'EUR':'symbol':'1.2-2' }}</strong></div>
+          <div class="summary-chip"><span i18n>Extra incoming</span><strong>{{ store.totalIncomingExtra(currentEvent) | currency:'EUR':'symbol':'1.2-2' }}</strong></div>
+          <div class="summary-chip"><span i18n>Outgoing</span><strong>{{ store.totalOutgoing(currentEvent) | currency:'EUR':'symbol':'1.2-2' }}</strong></div>
+          <div class="summary-chip"><span i18n>Balance</span><strong>{{ store.balance(currentEvent) | currency:'EUR':'symbol':'1.2-2' }}</strong></div>
+          <div class="summary-chip"><span i18n>Remaining vendor payments</span><strong>{{ store.remainingVendorPayments(currentEvent) | currency:'EUR':'symbol':'1.2-2' }}</strong></div>
+          <div class="summary-chip"><span i18n>Treasurer advance</span><strong>{{ store.treasuryPersonalAdvance(currentEvent) | currency:'EUR':'symbol':'1.2-2' }}</strong></div>
         </article>
 
         <article class="card stack-md">
           <div class="section-header">
             <div>
-              <h3>Movements</h3>
+              <h3 i18n>Movements</h3>
             </div>
           </div>
           @for (entry of currentEvent.treasuryEntries; track entry.id) {
             <div class="list-row">
               <div>
                 <div class="list-row__title">{{ entry.label }}</div>
-                <div class="muted small">{{ entry.date }} · {{ entry.notes || 'No notes' }}</div>
+                <div class="muted small">{{ entry.date }} · {{ entry.notes || noNotesText }}</div>
               </div>
               <div class="treasury-right">
                 <strong [class.outgoing]="entry.direction === 'out'" [class.incoming]="entry.direction === 'in'">
                   {{ entry.direction === 'out' ? '-' : '+' }}{{ entry.amount | currency:'EUR':'symbol':'1.2-2' }}
                 </strong>
-                <button type="button" class="link-button danger-link" (click)="removeTreasuryEntry(entry.id)">Delete</button>
+                <button type="button" class="link-button danger-link" (click)="removeTreasuryEntry(entry.id)" i18n>Delete</button>
               </div>
             </div>
           } @empty {
-            <p class="muted">No treasury movements yet.</p>
+            <p class="muted" i18n>No treasury movements yet.</p>
           }
         </article>
       </section>

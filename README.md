@@ -34,6 +34,16 @@ Open `http://localhost:4200`.
 - `src/app/components/event-detail.component.ts` → event dashboard with tabs
 - `src/app/models.ts` → core types
 
+## Translations i18n
+- Run the following command to add new source tags to your messages.xfl:
+
+`ng extract-i18n`
+
+then add target tag with the translation for each language
+
+- Tu serve the app locally with a specific language translations run the following e.g.(ES - Spanish)
+`ng serve --configuration=es`
+
 ## Notes
 - This is intentionally simple so you can keep building on top of it.
 - Data is stored locally in the browser under `party-treasury-events-v1`.

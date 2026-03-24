@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" target-language="es" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="9104254083887559111" datatype="html">
+        <source>← Back to events</source>
+        <target>← Volver a los eventos  </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5292728893892092223" datatype="html">
+        <source>Event dashboard</source>
+        <target>Panel de control del evento</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">5,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7040514017461616351" datatype="html">
+        <source>Treasurer</source>
+        <target>Tesorero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">7,11</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="233379993357985123" datatype="html">
+        <source>Total event cost</source>
+        <target>Coste total del evento</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">13,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2110303417465552387" datatype="html">
+        <source>Cost / person</source>
+        <target>Coste / persona</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">194,195</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5938097927171686284" datatype="html">
+        <source>Collected</source>
+        <target>Cobrado</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">248</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6813959860410561607" datatype="html">
+        <source>Paid to vendors</source>
+        <target>Pagado a proveedores</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7562652137830974208" datatype="html">
+        <source>Cash balance</source>
+        <target>Saldo en efectivo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3190964030724410860" datatype="html">
+        <source>Remaining to pay</source>
+        <target>Restante por pagar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">33,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4459462567997810189" datatype="html">
+        <source>Event basics</source>
+        <target>Conceptos básicos del evento</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">51,52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3995003806497901231" datatype="html">
+        <source>Quick edit for the main event fields.</source>
+        <target>Edición rápida para los campos principales del evento.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">52,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5844179461754011142" datatype="html">
+        <source>Event name</source>
+        <target>Nombre del evento</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">57,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3973931101896534797" datatype="html">
+        <source>Date</source>
+        <target>Fecha</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">61,62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4902817035128594900" datatype="html">
+        <source>Description</source>
+        <target>Descripción</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7577117124958114235" datatype="html">
+        <source>Save</source>
+        <target>Guardar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">73,79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2798494033468231873" datatype="html">
+        <source>Add participant</source>
+        <target>Añadir participante</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">84,85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4111488296308443760" datatype="html">
+        <source>Payments stay in this event only.</source>
+        <target>Los pagos permanecen en este evento solamente.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">85,88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8953033926734869941" datatype="html">
+        <source>Name</source>
+        <target>Nombre</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">89,90</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4548360208745588539" datatype="html">
+        <source>Notes (optional)</source>
+        <target>Notas (opcionales)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">90,91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3249513483374643425" datatype="html">
+        <source>Add</source>
+        <target>Añadir</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">91,95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3481736869685494304" datatype="html">
+        <source>Participants</source>
+        <target>Participantes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">98,99</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8496475121734833730" datatype="html">
+        <source>List with payment status.</source>
+        <target>Lista con estado de pago.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">99,103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8282940047848889809" datatype="html">
+        <source>Paid</source>
+        <target>Pagado</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">116,117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4416413576346763682" datatype="html">
+        <source>Pending</source>
+        <target>Pendiente</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">120,121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6533918067030990396" datatype="html">
+        <source>Amount</source>
+        <target>Cantidad</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">126,127</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">234,235</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7086654467512608485" datatype="html">
+        <source>Initial / extra / note</source>
+        <target>Inicial / extra / nota</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">127,128</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1930501554405068115" datatype="html">
+        <source>Add payment</source>
+        <target>Añadir pago</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">128,129</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4814285799071780083" datatype="html">
+        <source>Remove</source>
+        <target>Borrar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">129,132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="493783061984600697" datatype="html">
+        <source>No participants yet.</source>
+        <target>No hay participantes aún.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">132,138</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4077520913910941990" datatype="html">
+        <source>Label</source>
+        <target>Etiqueta</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">149,150</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">223,224</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2364239722287585101" datatype="html">
+        <source>Menu / DJ / Decoration</source>
+        <target>Menú / DJ / Decoración</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">150,153</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1806667489382256324" datatype="html">
+        <source>Category</source>
+        <target>Categoría</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">153,154</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2102825898069375693" datatype="html">
+        <source>Menu</source>
+        <target>Menú</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">155,157</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="855872803871324523" datatype="html">
+        <source>Music</source>
+        <target>Música</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">156,157</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3314187497610890696" datatype="html">
+        <source>Decoration</source>
+        <target>Decoración</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">157,159</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8693603235657020323" datatype="html">
+        <source>Other</source>
+        <target>Otro</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">158,161</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1672892729832959432" datatype="html">
+        <source>Total cost</source>
+        <target></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">162,163</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8104421162933956065" datatype="html">
+        <source>Notes</source>
+        <target>Notas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">166,167</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">238,239</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3915966149686975421" datatype="html">
+        <source>Optional</source>
+        <target>Opcional</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">167,169</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">239,241</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4928414692517228780" datatype="html">
+        <source>Save cost</source>
+        <target>Guardar coste</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">170,171</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8700121026680200191" datatype="html">
+        <source>Clear</source>
+        <target>Limpiar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">171,176</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5857358789349786962" datatype="html">
+        <source>Costs</source>
+        <target>Costes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">179,180</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.ts</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4007242760276929461" datatype="html">
+        <source>Tap edit to load an item back into the form.</source>
+        <target></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">180,184</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3193976279273491157" datatype="html">
+        <source>Actions</source>
+        <target>Acciones</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">198,200</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7585826646011739428" datatype="html">
+        <source>Edit</source>
+        <target>Editar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">200,201</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7022070615528435141" datatype="html">
+        <source>Delete</source>
+        <target>Borrar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">201,204</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">272,276</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3488864830342499114" datatype="html">
+        <source>No costs yet.</source>
+        <target>No hay costes aún.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">206,212</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="759472834425341473" datatype="html">
+        <source>Add treasury movement</source>
+        <target>Agregar movimiento de tesorería</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">217,218</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="938285553524139427" datatype="html">
+        <source>Use this for vendor payments or extra money added to the event cashbox.</source>
+        <target>Usa esto para pagos a proveedores o dinero extra agregado a la caja del evento.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">218,221</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3594622784426321525" datatype="html">
+        <source>Deposit restaurant / DJ payment</source>
+        <target>Depositar pago de restaurante / DJ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">224,227</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4328738626502194147" datatype="html">
+        <source>Direction</source>
+        <target>Dirección</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">227,228</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4169213784117603465" datatype="html">
+        <source>Outgoing</source>
+        <target>Salida</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">229,231</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">250</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2895348662418957250" datatype="html">
+        <source>Incoming extra</source>
+        <target>Ingresos extra</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">230,233</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8739050107976591288" datatype="html">
+        <source>Save movement</source>
+        <target>Guardar movimiento</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">242,247</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7956560421081439538" datatype="html">
+        <source>Extra incoming</source>
+        <target>Ingresos extra</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">249</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6888797559367695264" datatype="html">
+        <source>Balance</source>
+        <target>Saldo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">251</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2825857749689926906" datatype="html">
+        <source>Remaining vendor payments</source>
+        <target>Pagos pendientes al proveedor</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">252</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2363537979649391935" datatype="html">
+        <source>Treasurer advance</source>
+        <target>Adelanto del tesorero</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">253</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6850583910605992852" datatype="html">
+        <source>Movements</source>
+        <target>Movimientos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">259,262</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4958957982026786772" datatype="html">
+        <source>No treasury movements yet.</source>
+        <target>No hay movimientos en la tesorería aún.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.html</context>
+          <context context-type="linenumber">276,283</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4739818603756173797" datatype="html">
+        <source>Summary</source>
+        <target>Resumen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8688298623006329710" datatype="html">
+        <source>Treasury</source>
+        <target>Tesorería</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.ts</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5973381151475657501" datatype="html">
+        <source>No notes</source>
+        <target>No hay notas</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/event-detail/event-detail.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="340203994985991379" datatype="html">
+        <source>Gang Funds</source>
+        <target></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="468690645153242058" datatype="html">
+        <source> Add Event </source>
+        <target>Añadir Evento</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">7,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4431912934400469150" datatype="html">
+        <source> Event name <x id="TAG_INPUT" ctype="x-input" equiv-text="&lt;input
+        [(ngModel)]=&quot;draft.name&quot;
+        name=&quot;name&quot;
+        placeholder=&quot;Birthday dinner&quot;
+        required
+      /&gt;"/></source>
+        <target> Nombre del Evento </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">14,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="984734398347471762" datatype="html">
+        <source> Date <x id="TAG_INPUT" ctype="x-input" equiv-text="&lt;input [(ngModel)]=&quot;draft.date&quot; name=&quot;date&quot; type=&quot;date&quot; required /&gt;"/></source>
+        <target> Fecha </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1752523617907345270" datatype="html">
+        <source> Treasurer <x id="TAG_INPUT" ctype="x-input" equiv-text="&lt;input
+        [(ngModel)]=&quot;draft.treasurer&quot;
+        name=&quot;treasurer&quot;
+        placeholder=&quot;Silvia&quot;
+        required
+      /&gt;"/></source>
+        <target> Tesorero </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">29,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6770837676953472023" datatype="html">
+        <source> Description <x id="START_TAG_TEXTAREA" ctype="x-textarea" equiv-text="&lt;textarea
+        [(ngModel)]=&quot;draft.description&quot;
+        name=&quot;description&quot;
+        rows=&quot;3&quot;
+        placeholder=&quot;Optional notes&quot;
+      &gt;"/><x id="CLOSE_TAG_TEXTAREA" ctype="x-textarea" equiv-text="&lt;/textarea&gt;"/></source>
+        <target> Descripción </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">39,48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6612580946545131013" datatype="html">
+        <source>Create event</source>
+        <target>Crear Evento</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">49,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2330577642930707695" datatype="html">
+        <source> Cancel </source>
+        <target> Cancelar </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">51,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7593555694782789615" datatype="html">
+        <source>Open</source>
+        <target>Abrir</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">90,94</context>
+        </context-group>
+      </trans-unit>
+       <trans-unit id="yourEventsTitle" datatype="html">
+        <source>Your events</source>
+        <target>Tus eventos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">60,63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8122717889435927638" datatype="html">
+      <source>👥 Participants</source>
+      <target>👥 Participantes</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">101,102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2734420018350662857" datatype="html">
+        <source>💰 Cost / person</source>
+        <target>💰 Coste / persona</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">105,107</context>
+        </context-group>
+      </trans-unit>
+       <trans-unit id="5791125806552988373" datatype="html">
+        <source>💸 Collected</source>
+        <target>💸 Cobrado</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">111,113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6930749174350693923" datatype="html">
+        <source>⏳ Remaining</source>
+        <target>⏳ Pendiente</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">117,119</context>
+        </context-group>
+      </trans-unit>
+       <trans-unit id="1541998879959661422" datatype="html">
+        <source>📅 No events yet</source>
+        <target>📅 No hay eventos aún</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">127,128</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2480242302014621403" datatype="html">
+        <source>Create the first one using the button above.</source>
+        <target>Crea el primero usando el botón de arriba.</target>
+
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">128,133</context>
+        </context-group>
+      </trans-unit>
+       <trans-unit id="1505445663464000762" datatype="html">
+        <source> Event name </source>
+        <target> Nombre del evento </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">18,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1216445956577529579" datatype="html">
+        <source> Date </source>
+        <target> Fecha </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8277265519845190276" datatype="html">
+        <source> Treasurer </source>
+        <target> Tesorero </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">29,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3563823504206575540" datatype="html">
+        <source> Description </source>
+        <target> Descripción </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/events-list/events-list.component.html</context>
+          <context context-type="linenumber">37,40</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
